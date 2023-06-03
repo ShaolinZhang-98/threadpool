@@ -1,0 +1,42 @@
+﻿  正在验证源
+  正在将源远程复制到“101.42.156.197”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  threadpool.c
+E:\C++学习\线程池实现\threadpool\threadpool.c(50,3): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\C++学习\线程池实现\threadpool\threadpool.c(50,3): warning :    pool->threadIDs = (pthread_t*)malloc(sizeof(pthread_t) * max);
+E:\C++学习\线程池实现\threadpool\threadpool.c(50,3): warning :    ^
+E:\C++学习\线程池实现\threadpool\threadpool.c(56,3): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\C++学习\线程池实现\threadpool\threadpool.c(56,3): warning :    memset(pool->threadIDs, 0, sizeof(pthread_t) * max);
+E:\C++学习\线程池实现\threadpool\threadpool.c(56,3): warning :    ^
+E:\C++学习\线程池实现\threadpool\threadpool.c(73,3): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\C++学习\线程池实现\threadpool\threadpool.c(73,3): warning :    pool->taskQ = (Task*)malloc(sizeof(Task) * queueSize);
+E:\C++学习\线程池实现\threadpool\threadpool.c(73,3): warning :    ^
+E:\C++学习\线程池实现\threadpool\threadpool.c(80,3): warning : passing argument 3 of ‘pthread_create’ from incompatible pointer type [enabled by default]
+E:\C++学习\线程池实现\threadpool\threadpool.c(80,3): warning :    pthread_create(&pool->managerID, NULL, manager, pool);
+E:\C++学习\线程池实现\threadpool\threadpool.c(80,3): warning :    ^
+/usr/include/pthread.h(235,12): message : expected ‘void * (*)(void *)’ but argument is of type ‘void (*)(void *)’
+/usr/include/pthread.h(235,12): message :  extern int pthread_create (pthread_t *__restrict __newthread,
+/usr/include/pthread.h(235,12): message :             ^
+E:\C++学习\线程池实现\threadpool\threadpool.c(84,4): warning : passing argument 3 of ‘pthread_create’ from incompatible pointer type [enabled by default]
+E:\C++学习\线程池实现\threadpool\threadpool.c(84,4): warning :     pthread_create(&pool->threadIDs[i], NULL, worker, pool);
+E:\C++学习\线程池实现\threadpool\threadpool.c(84,4): warning :     ^
+/usr/include/pthread.h(235,12): message : expected ‘void * (*)(void *)’ but argument is of type ‘void (*)(void *)’
+/usr/include/pthread.h(235,12): message :  extern int pthread_create (pthread_t *__restrict __newthread,
+/usr/include/pthread.h(235,12): message :             ^
+E:\C++学习\线程池实现\threadpool\threadpool.c(224,2): warning : ‘return’ with a value, in function returning void [enabled by default]
+E:\C++学习\线程池实现\threadpool\threadpool.c(224,2): warning :   return NULL;
+E:\C++学习\线程池实现\threadpool\threadpool.c(224,2): warning :   ^
+E:\C++学习\线程池实现\threadpool\threadpool.c(255,6): warning : passing argument 3 of ‘pthread_create’ from incompatible pointer type [enabled by default]
+E:\C++学习\线程池实现\threadpool\threadpool.c(255,6): warning :       pthread_create(&pool->threadIDs[i], NULL, worker, pool);
+E:\C++学习\线程池实现\threadpool\threadpool.c(255,6): warning :       ^
+/usr/include/pthread.h(235,12): message : expected ‘void * (*)(void *)’ but argument is of type ‘void (*)(void *)’
+/usr/include/pthread.h(235,12): message :  extern int pthread_create (pthread_t *__restrict __newthread,
+/usr/include/pthread.h(235,12): message :             ^
+E:\C++学习\线程池实现\threadpool\threadpool.c(274,2): warning : ‘return’ with a value, in function returning void [enabled by default]
+E:\C++学习\线程池实现\threadpool\threadpool.c(274,2): warning :   return NULL;
+E:\C++学习\线程池实现\threadpool\threadpool.c(274,2): warning :   ^
+  正在链接对象
+  threadpool.vcxproj -> E:\C++学习\线程池实现\threadpool\bin\x64\Debug\threadpool.out
